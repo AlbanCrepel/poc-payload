@@ -1,4 +1,35 @@
-# Payload Blank Template
+# poc-payload
+
+> Just a small project to show how great PayloadCMS is.
+
+## Quick start
+
+```bash
+npx create-payload-app # BLANK project | naming the project `poc-payload` and choosing SQLite
+cd poc-payload
+npm install
+```
+
+The collections `Users` and `Media` are already created.
+
+I added the `Articles` collection as example, and a `Footer` global endpoint.
+
+```bash
+npm run payload generate:importmap                 
+npm run dev
+# go to http://localhost:3000/admin
+# create the admin: admin@admin.com:password
+```
+
+The API is already working, and you can try some HTTP requests with the `api.http` file (using JetBrains natively or with the [HttpYac VSCode extension](https://marketplace.visualstudio.com/items?itemName=anweber.vscode-httpyac)).
+
+The front-end can be developed in the `src/app/(frontend)` folder, or separated in the technology you choose.
+
+---
+
+:arrow_down: The default README content:
+
+## Payload Blank Template
 
 This template comes configured with the bare minimum to get started on anything you need.
 
